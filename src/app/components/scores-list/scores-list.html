@@ -1,0 +1,24 @@
+<div class="scores-wrapper">
+  @if (scoresList | async; as scoresListAsync ){
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Level</th>
+        <th>Scores</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (score of scoresListAsync; track score.id){
+      <tr>
+        <td>{{ score.name }}</td>
+        <td>{{ score.level }}</td>
+        <td>{{ score.scores }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  } @else{
+  <div>No scores yet!</div>
+  }
+</div>

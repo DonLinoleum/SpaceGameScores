@@ -1,0 +1,37 @@
+.scores-wrapper {
+  margin-top: 20px;
+}
+
+.scores-wrapper table {
+  width: 100%;
+  overflow: hidden;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  border: 2px solid #430c0c;
+}
+
+thead {
+  background-color: #430c0c;
+}
+tr {
+  border-radius: 15px;
+  transition: 0.2s opacity ease;
+}
+tr:hover {
+  opacity: 0.5;
+}
+
+tr:nth-child(2n + 2) {
+  background-color: rgb(31, 31, 31);
+}
+
+th {
+  font-size: 1.5rem;
+}
+td,
+th {
+  text-align: center;
+  padding: 20px 5px;
+}

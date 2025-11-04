@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Println("Server is listening...")
-	fs:= http.FileServer(http.Dir("dist/space_game_scores/browser"))
+	fs:= http.FileServer(http.Dir("/app/dist/space_game_scores/browser"))
 	http.Handle("/",fs)
 
 	http.ListenAndServe("0.0.0.0:4200",nil)
